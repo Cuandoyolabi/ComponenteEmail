@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<main class="container__main">
+  
+  <div class="container__principal__information">
+    <div class="container__main__img"></div>
+    <div class="centrado">
+      <h1 class="container__main__title">Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <div class="centrando__ando centrado__ando__first">
+        <img src="./assets/images/icon-list.svg">
+        <p class="centrando__ando__txt">Product discovery and building what   matters</p>
+      </div>
+      <div class="centrando__ando">
+        <img src="./assets/images/icon-list.svg">
+        <p class="centrando__ando__txt">Measuring to ensure   updates are a   success</p>
+      </div>
+      <div class="centrando__ando">
+        <img src="./assets/images/icon-list.svg">
+        <p class="centrando__ando__txt">And much more!</p>
+      </div>
+
+      <div class="bottons">
+        <div class="bottons__spans">
+          <h6 class="bottons__message">Email address</h6>
+          <span></span>
+        </div>
+        <input class="input__email" type="email" id="correo" name="correo"   
+        placeholder="email@company.com" required>
+        <input class="input__subscribe" type="submit" value="Subscribe to monthly newsletter">
+      </div>
+    </div>
+  </div>
+  <div class="container__thanks__subscribing">
+    <div class="container__thanks__subscribing__union">
+      <img class="container__thanks__subscribing__img" src="./assets/images/icon-success.svg">
+      <h1 class="container__thanks__subscribing__title">Thanks for subscribing!</h1>
+      <p class="container__thanks__subscribing__paragraph">A confirmation email has been  sent to <span class="container__thanks__subscribing__span"></span>. Please open it and
+      click the button inside to confirm your subscription</p>
+    </div>
+      <button class="container__thanks__subscribing__button">Dismiss message</button>
+  </div>
+  
+  <!-- Sign-up form end 
+
+   Success message start 
+
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+  </main>
+  <!-- Success message end -->
+  
+ 
+ 
+ 
+  <script src="script.js"></script>
+</body>
+</html>

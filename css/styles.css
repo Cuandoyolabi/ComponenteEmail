@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Dark-Blue: #2b2d3e;
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Orange: #fc4c38;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container__main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__main__img{
+    width: 375px;
+    height: 284px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container__main__title{
+    align-self: flex-start;
+    margin: 35px 0px 25px 0px;
+}
+
+.container__principal__information{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------Container Thank You-----------*/
+.container__thanks__subscribing{
+    width: 370px;
+    height: 700px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 30px;    
+    padding: 20px;
+}
+.container__thanks__subscribing__button{
+    width: 330px;
+    height: 50px;
+    border: none;
+    color: var(--White);
+    background-color: var(--Dark-Blue);
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 17px;
+    align-self: center;
+    align-items: flex-end;
+}
+.container__thanks__subscribing__img, .container__thanks__subscribing__title{
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------probando-------------*/
+
+.centrado{
+    padding: 20px 20px 0x 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.centrando__ando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.centrado__ando__first{
+    margin-top: 15px;
+}
+
+.centrando__ando__txt{
+    margin-left: 15px;
+}
+
+.bottons__spans{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottons{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input__email{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.input__subscribe{
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 400;
+    color: white;
+    margin-bottom: 40px;
+    cursor: pointer;
+    background-color: #222640;
+}
+
+.bottons__message{
+    align-self: flex-start;
+    margin: 10px 0px 10px 0px;
+}
+
+.attribution{
+    display: flex;
+    flex-direction: column;    
+    margin-top: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+.showed{
+    display: flex;
+}
+
+/*-----------------600px--------------*/
+@media (min-width: 900px){
+    .container__main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Dark-Blue);
+    }
+    .container__principal__information{
+        margin: 50px 50px;
+        width: 800px;
+        height: 500px;
+        flex-direction: row-reverse;
+        border-radius: 30px;
+        background-color: var(--White);
+    }
+    .centrando__ando{
+        align-self: flex-start;
+    }
+    .centrado{
+        width: 500px;
+        height: 400px;
+        margin: 30px 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .container__main__title{
+        font-size: 45px;
+        align-self: flex-start;
+    }
+    .container__main__img{
+        width: 520px;
+        height: 450px;
+        border-radius: 30px;
+        margin: 20px;
+        background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    }
+    .bottons__message{
+        font-size: 13px;
+    }
+    .input__email{
+        width: 340px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .input__subscribe{
+        width: 340px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .container__thanks__subscribing__title{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .container__thanks__subscribing{
+        width: 400px;
+        height: 400px;
+        padding: 40px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 30px;
+        background-color: var(--White);
+    }
+    .container__thanks__subscribing__img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+    .container__thanks__subscribing__button{
+        width: 320px;
+        height: 45px;
+        border: none;
+        color: var(--White);
+        background-color: var(--Orange);
+        border-radius: 7px;
+        cursor: pointer;
+        margin-top: 15px;
+
+    }
+}
